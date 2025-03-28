@@ -14,11 +14,9 @@ if "Duane" not in usernames:
     usernames.append("Duane")
 
 def make_messages():
-
     Message.query.delete()
     
     messages = []
-
     for i in range(20):
         message = Message(
             body=fake.sentence(),
